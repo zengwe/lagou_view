@@ -1,0 +1,145 @@
+@import "./commons/all.scss";
+@import "./mixins/terminals.scss";
+.header{
+	height: #{$headerHeight+'rem'};
+	display: block;
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top:0px;
+	background-color: $header-bg;
+	border-bottom: 1px solid $split-color;
+	font-size: 0px;
+	padding:0.1rem 0px;
+	box-sizing:border-box;
+	.area{
+		display: inline-block;
+		vertical-align: middle;
+		width: 20%;
+		height: 0.4rem;
+		line-height: 0.4rem;
+		font-size: $font-sub;
+		text-align: center;
+	}
+	.inputarea{
+		display: inline-block;
+		vertical-align: middle;
+		width: 65%;
+		height: 0.4rem;
+		line-height: 0.4rem;
+		background-color: #e7e8ea;
+		border-radius: 0.2rem;
+		font-size: 0px;
+		.icon-search{
+			display: inline-block;
+			height: inherit;
+			width: 15%;
+			text-align: center;
+			font-size: $font-sub;
+		}
+		input{
+			display: inline-block;
+			width: 80%;
+			height: 0.4rem;
+			border:0px none;
+			background-color: transparent;
+			&:active,&:focus{
+				border:0px none;
+				outline: 0px none;
+			}
+		}
+	}
+	.handleArea{
+		display: inline-block;
+		vertical-align: middle;	
+		width: 15%;	
+		height: 0.4rem;
+		line-height: 0.4rem;
+		button{
+			height:0.4rem;
+			width: 100%;
+			display: block;
+			background-color: transparent;
+			border: 0px none;
+			font-size: $font-sub;
+			&:active,&:focus{
+				border:0px none;
+				outline: 0px none;
+			}			
+		}
+	}
+}
+.searchEmpty{
+	display: block;
+	position: fixed;
+	width: 100%;
+	top:#{$headerHeight+'rem'};
+	left: 0px;
+	.hot-search-area{
+		padding:0.2rem 0.2rem;
+		background-color: $body-bg-color;
+		.title{
+			h5{
+				font-size: $font-h5;
+			}
+		}
+		.searlist{
+			overflow: hidden;
+			&:after{
+				content: "";
+				clear: both;
+			}
+			li{
+				display: inline-block;
+				height: 0.3rem;
+				line-height: 0.3rem;
+				border:1px solid $split-color;
+				padding:0px 0.1rem;
+				margin-top: 0.1rem;
+				margin-right: 0.1rem;
+				border-radius: 0.15rem;
+				font-size: $font-sub;
+				color: $active-color;
+			}
+		}
+	}
+	.search-history{
+		background-color: $bg-white;
+		$positionH:0.6;
+		padding:0px 0.2rem;
+		.position-item{
+			display: block;
+			position: relative;
+			height: #{$positionH+'rem'};
+			line-height: #{$positionH+'rem'};
+			font-size: $font-h5;
+			color: $font-mid-title-color;
+			border-bottom: 1px solid $split-color;
+			padding:0px 0.35rem;
+			.iconfont{
+				display: block;
+				position: absolute;
+				top:0px;
+				height: #{$positionH+'rem'};
+				line-height: #{$positionH+0.05+'rem'};
+				width: #{$positionH+'rem'}; 				
+				font-size: 0.24rem;
+			}
+			.left-icon{
+				text-align: left;
+				left:0px;
+			}
+			.right-icon{
+				text-align: right;
+				right:0px;
+			}			
+		}
+		.clear-hostory{
+			height: #{$positionH+'rem'};
+			line-height: #{$positionH+0.1+'rem'};
+			text-align: center;
+			color: $font-nor-title-color;
+			font-size: $font-h5;			
+		}		
+	}
+}

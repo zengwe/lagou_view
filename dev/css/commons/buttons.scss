@@ -1,0 +1,7 @@
+.btn{
+	display: inline-block;
+	&:active,
+	&:focus{
+		outline: 0px none;
+	}
+}

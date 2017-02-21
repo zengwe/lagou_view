@@ -1,0 +1,7 @@
+@mixin tap-highlight-color($str){
+	-webkit-tap-highlight-color:$str;  
+	-moz-tap-highlight-color:$str;  
+	-ms-tap-highlight-color:$str;  
+	-o-tap-highlight-color:$str;  
+	tap-highlight-color:$str; 	
+}

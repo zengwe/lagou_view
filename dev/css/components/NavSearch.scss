@@ -1,0 +1,21 @@
+.nav{
+	width: 100%;
+	display: block;
+	position: fixed;
+	height: 0.5rem;
+	background-color: rgba(0,179,137,0);
+	z-index: 900;
+	.search{
+		display: block;
+		$serch-height:0.4rem;
+		height: $serch-height;
+		line-height: $serch-height;
+		width: 80%;
+		margin:0.05rem auto;
+		text-align: center;
+		font-size: 0.16rem;
+		background-color: rgba(255,255,255,1);
+		border-radius: 0.2rem;
+		color:$font-info-color;
+	}
+}

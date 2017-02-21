@@ -1,0 +1,109 @@
+$employerHeight:1.5;
+.employer{
+	display: block;
+	width: 100%;
+	position: relative;
+	height: #{$employerHeight+'rem'};
+	.company-logo{
+		position: absolute;
+		top:0px;
+		width: #{$employerHeight+'rem'};
+		height: #{$employerHeight+'rem'};
+		left: 0px;
+		$imgSize:#{$employerHeight*0.8+'rem'};
+		img{
+			display: block;
+			height: $imgSize;
+			width: $imgSize;
+			margin: #{$employerHeight * 0.1+'rem'} 0px 0px #{$employerHeight * 0.1+'rem'};
+			border:0px none;
+		}
+	}
+	.info{
+		box-sizing:border-box;
+		padding:#{$employerHeight * 0.1+'rem'} #{$employerHeight * 0.1+'rem'} #{$employerHeight * 0.1+'rem'} #{$employerHeight+'rem'};
+		width: 100%;
+		height: #{$employerHeight+'rem'};
+		overflow: hidden;
+		.requirements{
+			position: relative;
+			line-height: 0.2rem;
+			.positon{
+				h5{
+					font-size: $font-h5;
+					color: $font-mid-title-color;
+					display: inline;
+				}
+				.chat{
+					font-size: 0.22rem;
+					color: $active-color;
+				}
+			}
+			.compensation{
+				text-align: right;
+				display: block;
+				position: absolute;
+				top:0px;
+				right: 0px;
+				color: $font-money-color;
+				font-size: $font-mini;
+				line-height: 0.2rem;
+			}
+		}
+		.company-name{
+			margin:0.12rem 0px 0px 0px;
+			p{
+				font-size: $font-sub;
+			}
+		}
+		.info-list{
+			margin:0.1rem 0px 0px 0px;
+			position: relative;
+			ul{
+				li{
+					display: inline-block;
+					font-size: $font-mini;
+					color:$font-info-color;
+					line-height: 0.2rem;
+				}
+			}
+			.time{
+				display: block;
+				color:$font-info-color;
+				line-height: 0.2rem;
+				position: absolute;	
+				top:0px;
+				right:0px;			
+			}
+		}
+	}
+	.showfirst{
+		display: block;
+		position: relative;
+		z-index: 100;
+		background-color: #ffffff;
+	}
+	.handle{
+		position: absolute;
+		display: table;
+		height: #{$employerHeight+'rem'};
+		width: #{$employerHeight+'rem'};
+		background-color: #c8c8c8;
+		top:0px;
+		right:0px;
+		z-index: 99;
+		.haadle-mid{
+			display: table-cell;
+			vertical-align: middle;
+			color: $main-color;
+			text-align: center;
+			line-height: 0.4rem;
+			font-size: $font-h5;
+			letter-spacing: 0.02rem;
+			.notLike{
+				font-size: 0.24rem;
+				text-decoration:line-through;
+			}
+		}
+	}
+}

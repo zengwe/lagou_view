@@ -1,0 +1,44 @@
+@import "./commons/all.scss";
+@import "./mixins/terminals.scss";
+@import "./components/header.scss";
+@import "./components/arealist.scss";
+body{
+	background-color: #f9f9f9;
+}
+.choosearea1-main{
+	display:block;
+	position: fixed;
+	width: 100%;
+	position: fixed;
+	left:0px;
+	top:#{$headerHeight+'rem'};
+	.choose-tip{
+		height: 0.6rem;
+		line-height: 0.6rem;
+		background-color: #ffffff;
+		text-align: center;
+		font-size: 0.18rem;
+		color: $font-nor-title-color;
+	}
+}
+.header{
+	background-color: #f9f9f9;
+}
+.area-container{
+
+	.change-area{
+		display: block;
+		position: absolute;
+		top:0.2rem;
+		right:0.2rem;
+		height: 0.34rem;
+		line-height: 0.34rem;
+		color: $active-color;
+		span{
+			font-size: 0.2rem!important;
+		}
+		i{
+			font-size: 0.2rem!important;
+		}
+	}
+}

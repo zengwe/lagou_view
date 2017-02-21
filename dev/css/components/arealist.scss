@@ -1,0 +1,40 @@
+.area-block{
+	.title{
+		line-height: 0.3rem;
+		text-indent: 0.2rem;
+		font-size: 0.14rem;
+		p{
+			color: $font-nor-title-color;
+		}
+	}
+	.area-container{
+		position: relative;
+		.area-list{
+			display: block;
+			padding:0px 0.2rem 0.2rem 0.2rem;
+			background-color: #ffffff;
+			font-size: 0px;
+			position: relative;
+			li{
+				display: inline-block;
+				width: 33.333%;
+				padding-top:0.2rem;
+				a{	
+					$thisH:0.34;
+					display: block;
+					width: 80%;
+					height: #{$thisH+'rem'};
+					color: #818181;
+					line-height:#{$thisH+'rem'}; 
+					text-align: center;
+					margin:0px auto;
+					box-sizing:border-box;
+					border:1px solid $split-color;
+					font-size: 0.2rem;
+					border-radius: #{$thisH/2+'rem'};
+				}
+			}
+		}		
+	}
+
+}

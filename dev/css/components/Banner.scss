@@ -1,0 +1,51 @@
+$banner-height:2.6rem;
+.bannerarea{
+	display: block;
+	width: 100%;
+	height: $banner-height;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+	.banner-main{
+		display: block;
+		height:$banner-height;
+		li{
+			display: block;
+			height:$banner-height;
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			left:0px;
+			img{
+				display: block;
+				height: $banner-height;
+				width: 100%;
+			}
+		}
+	}
+	.banner-spot{
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		bottom: 0.1rem;
+		ul{
+			display: table;
+			margin:0px auto 0px auto;
+			li{
+				display: inline-block;
+				height: 0.1rem;
+				width: 0.1rem;
+				background-color: #ffffff;
+				border-radius: 50%;
+				margin-right:0.07rem;
+				&:last-child{
+					margin-right:0rem;
+				}
+			}
+			.active{
+				background-color: $active-color;
+			}
+		}
+	}
+}

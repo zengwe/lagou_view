@@ -1,0 +1,18 @@
+@import "./commons/all.scss";
+@import "./mixins/terminals.scss";
+@import "./components/NavSearch.scss";
+@import "./components/Banner.scss";
+@import "./components/Recruitment.scss";
+@import "./components/FooterBar.scss";
+.container{
+	position: relative;
+	z-index: 500;
+	.list-block{
+		.employer{
+			margin-bottom: 0.1rem;
+			&:last-child{
+				margin-bottom: 0.0rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+$footHeight:0.6;
+.foot{
+	font-size: 0px;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	bottom: 0px;
+	left: 0px;
+	height: #{$footHeight+'rem'};
+	background-color: $main-color;
+	box-sizing:border-box;
+	border-top: 1px solid $split-color;
+	padding-top: 0.05rem;
+	a{
+		display:inline-block;
+		box-sizing:border-box;
+		width: 25%;
+		height: #{$footHeight+'rem'};
+		text-align: center;
+		color: $font-nor-title-color;
+		@include tap-highlight-color('rgba(0, 0, 0, 0)');
+		.iconfont{
+			font-size: 0.3rem;
+			font-weight: 600;
+		}
+		.text{
+			font-size: 0.12rem;
+		}
+		&:active,
+		&:focus,
+		&:hover,
+		{
+			//background-color: transparent;
+		}
+	}
+	.active{
+		color: $active-color;
+	}
+}
